@@ -1,0 +1,118 @@
+// Colours //
+/* Primary */
+$light-cyan: hsl(193, 38%, 86%);
+$neon-green: hsl(150, 100%, 66%);
+
+/* Neutral */
+$grayish-blue: hsl(217, 19%, 38%);
+$dark-gray-blue: hsl(217, 19%, 24%);
+$dark-blue: hsl(218, 23%, 16%);
+
+// Fonts //
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+$font-face: 'Manrope', sans-serif;
+$quote-font-size: 28px;
+
+// Mobile and desktop min. sizes //
+$mobile: 375px;
+$desktop: 1440px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-face;
+    background: $dark-blue;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+
+    .container {
+        display: grid;
+        background: $dark-gray-blue;
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+        padding: 30px;
+        position: relative;
+
+        #p-id {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: $neon-green;
+            padding-top: 20px;
+        }
+
+        #p-quote {
+            color: $light-cyan;
+            font-size: $quote-font-size;
+            font-weight: 700;
+        }
+
+        #divider-desktop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        #divider-mobile {
+            display: none;
+        }
+
+        #reload-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background: $neon-green;
+            width: 40px;
+            height: 40px;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0px 0px 20px $dark-blue;
+            transition: 0.2s;
+            position: absolute;
+            left: 50%;
+            bottom: -8%;
+            transform: translateX(-50%);
+        }
+
+        #reload-btn:hover {
+            box-shadow: 0px 0px 20px $neon-green;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        .container {
+            width: 400px;
+            height: 400px;
+
+            #divider-desktop {
+                display: none;
+            }
+
+            #divider-mobile {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            #reload-btn {
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+            }
+        }
+    }
+}

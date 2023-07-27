@@ -1,0 +1,92 @@
+/* Primary */
+/* Neutral */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: hsl(218, 23%, 16%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+main .container {
+  display: grid;
+  background: hsl(217, 19%, 24%);
+  width: 500px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 30px;
+  position: relative;
+}
+main .container #p-id {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: hsl(150, 100%, 66%);
+  padding-top: 20px;
+}
+main .container #p-quote {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+  font-weight: 700;
+}
+main .container #divider-desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+main .container #divider-mobile {
+  display: none;
+}
+main .container #reload-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: hsl(150, 100%, 66%);
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px hsl(218, 23%, 16%);
+  transition: 0.2s;
+  position: absolute;
+  left: 50%;
+  bottom: -8%;
+  transform: translateX(-50%);
+}
+main .container #reload-btn:hover {
+  box-shadow: 0px 0px 20px hsl(150, 100%, 66%);
+}
+
+@media (max-width: 768px) {
+  main .container {
+    width: 400px;
+    height: 400px;
+  }
+  main .container #divider-desktop {
+    display: none;
+  }
+  main .container #divider-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  main .container #reload-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
