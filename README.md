@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned about using third-party APIs within JavaScript. I had recently used asyncronous functions and the fetch API in another challenge, and so I used my knowledge from that to incorporate it into this project.
+I learned about using third-party APIs within JavaScript. I had recently used asynchronous functions and the fetch API in another challenge, and so I used my knowledge from that to incorporate it into this project.
 
 ```js
 async function fetchData() {
